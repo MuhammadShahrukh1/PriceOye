@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price oye</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="stylesheet" href="./assests/CSS/style.css">
+</head>
+
+<body style="background-color: #eee; position: relative;">
+    <div class="2xl:container mx-auto">
+        <nav class="flex h-16 bg-sky-400 justify-around">
+            <div class="flex items-center px-8">
+                <img class="w-28 md:w-32" src="./assests/images/logo.svg" alt="">
+            </div>
+            <div class="flex items-center relative">
+                <input class="rounded-lg w-72" type="search" placeholder="Search here">
+                <img class="absolute right-3" src="./assests/images/mic-blue.svg" alt="">
+            </div>
+            <div class="flex items-center leading-9 hidden md:block mt-1">
+                <button class="rounded-lg w-24 py-2 bg-white text-sky-400">Log In</button>
+                <button class="rounded-lg w-24 py-2 bg-sky-400 text-white border border-white ml-2">Register</button>
+            </div>
+        </nav>
+        <div id="default-carousel" class="relative w-full" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-96 overflow-hidden">
+                <!-- Item 1 -->
+                <div class="duration-100 ease-in-out" data-carousel-item>
+                    <img src="./assests/images/slider-1l.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
+                        alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="duration-100 ease-in-out" data-carousel-item>
+                    <img src="./assests/images/slider-2.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
+                        alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="duration-100 ease-in-out" data-carousel-item>
+                    <img src="./assests/images/slider-3.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
+                        alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="duration-100 ease-in-out" data-carousel-item>
+                    <img src="./assests/images/slider-4.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
+                        alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="duration-100 ease-in-out" data-carousel-item>
+                    <img src="./assests/images/slider-5.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
+                        alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <!-- <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div> -->
+            <!-- Slider controls -->
+            <!-- <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button> -->
+            <!-- <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button> -->
+        </div>
+        <div
+            class="bg-white 2xl:container mx-auto my-5 border rounded-lg shadow-xl p-5 flex justify-center md:justify-around flex-wrap">
+            <select name="brands" id="brands" onchange="selectbrand()"
+                class="mt-3 md:mt-0 w-full sm:w-64 text-lg rounded-lg border outline-none focus:ring-3 focus:ring-amber-600">
+                <option disabled selected value="" class="w-64">Select Brands</option>
+            </select>
+            <select name="model" id="model" onchange="selectModel()"
+                class="sm:ml-4 mt-3 md:mt-0 w-full sm:w-64 text-lg rounded-lg border outline-none focus:ring-3 focus:ring-amber-600">
+                <option disabled selected value="" class="w-64">Select Model</option>
+            </select>
+
+            <button type="button" onclick="submit()"
+                class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center ml-3 w-32 mt-3 md:mt-0">Search</button>
+        </div>
+        <div class="product-container" id="product-container">
+        </div>
+        <div class="flex flex-row rounded bg-white justify-center">
+            <div class="flex-1 p-5 border-r-2 border-slate-200">
+                <div class="flex flex-row m-2 justify-center">
+                    <img class="w-6 h-6" src="./assests/images/percentage.svg" alt="">
+                </div>
+                <span class="flex justify-center text-center">100% Original Products</span>
+            </div>
+            <div class="flex-1 p-5 border-r-2 border-slate-200">
+                <div class="flex flex-row m-2 justify-center">
+                    <img class="w-6 h-6" src="./assests/images/cockade.svg" alt="">
+                </div>
+                <span class="flex justify-center">Fast Delivery</span>
+            </div>
+
+
+            <div class="flex-1 p-5 border-r-2 border-slate-200">
+                <div class="flex flex-row m-2 justify-center">
+                    <img class="w-6 h-6" src="./assests/images/replace.svg" alt="">
+                </div>
+                <span class="flex justify-center">Easy Replacement</span>
+            </div>
+        </div>
+
+        <footer class="bg-blue-400 text-white">
+            <div class="footer-primary">
+                <div class="max-w-screen-xl w-full py-0 px-8 mx-auto relative">
+                    <div class="flex flex-wrap py-6">
+                        <div class="columns flex-auto">
+                            <img src="./assests/images/logo.svg" width="128" height="27" alt="">
+                            <ul class="pt-8">
+                                <li class="mb-3">
+                                    <a href="" class="text-white">About Us</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="" class="text-white">FAQs</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="" class="text-white">Contact us</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="" class="text-white">Careers</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="" class="text-white">Press & Blog</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="" class="text-white">Terms & condition</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="columns flex-auto sm:pt-0">
+                            <!-- <img src="./assests/images/logo.svg" width="128" height="27" alt=""> -->
+                            <div class="text-white title text-2xl">Customer Services</div>
+                            <ul class="pt-8">
+                                <li class="mb-3">
+                                    <a href="" class="text-white">Help Center</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="" class="text-white">Privacy Policy</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="" class="text-white">Installments Plan</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="" class="text-white">E-Warranty Activation</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="" class="text-white">Sell on PriceOye</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="columns flex-auto md:pt-0 pt-12">
+                            <!-- <img src="./assests/images/logo.svg" width="128" height="27" alt=""> -->
+                            <div class="text-white text-2xl">Secure Payments Methods</div>
+                            <div class="pt-8">
+                                <div class="justify-center">
+                                    <img src="./assests/images/payment_method.svg" width="270" height="27" alt="">
+                                    <img src="./assests/images/playstore.png" width="160" height="60" class="pt-2"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- <div class="popup-view">
+        <div class="popup-card">
+            <a><i class="fa-solid fa-xmark text-xl"></i></a>
+            <div class="popupImgCard">
+                <img src="./assests/images/apple-iphone-12-pro-maxcard.jpg" alt="">
+            </div>
+            <div class="info">
+                <h2>Apple iphone 16 Pro Max<span>Price : 279,999</span>
+                </h2>
+
+            </div>
+        </div>
+    </div> -->
+
+
+    <script src="./assests/JS/app.js"></script>
+</body>
+
+</html>
